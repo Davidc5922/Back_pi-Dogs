@@ -12,7 +12,7 @@ const getapiinfo = async ()=>{
 
             height_Min:e.height.metric.split("-")[0] && e.height.metric.split("-")[0]!=="NaN"&&isNaN(e.height.metric.split("-")[0])!==true?e.height.metric.split("-")[0]:(e.height.imperial.split("–")[0]&&e.height.imperial.split("-")[0]!=="NaN"&&isNaN(e.height.imperial.split("-")[0])!==true?Math.round(e.height.imperial.split("–")[0]/ 2.205).toString():'No tenemos Altura Maxima '),
 
-            heigh_Max:e.height.metric.split("-")[1] && e.height.metric.split("-")[1]!=="NaN"&&isNaN(e.height.metric.split("-")[1])!==true?e.height.metric.split("-")[1]:(e.height.imperial.split("–")[1]&&e.height.imperial.split("-")[1]!=="NaN"&&isNaN(e.height.imperial.split("-")[1])!==true?Math.round(e.height.imperial.split("–")[1]/ 2.205).toString():'No tenemos Altura Maxima ')
+            height_Max:e.height.metric.split("-")[1] && e.height.metric.split("-")[1]!=="NaN"&&isNaN(e.height.metric.split("-")[1])!==true?e.height.metric.split("-")[1]:(e.height.imperial.split("–")[1]&&e.height.imperial.split("-")[1]!=="NaN"&&isNaN(e.height.imperial.split("-")[1])!==true?Math.round(e.height.imperial.split("–")[1]/ 2.205).toString():'No tenemos Altura Maxima ')
             
             /* Math.round(e.height.imperial.split("–")[1]/ 2.205).toString() */
             
